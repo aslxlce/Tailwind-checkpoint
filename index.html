@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog page</title>
+        <link rel="stylesheet" href="styles/input.css" />
+        <link rel="stylesheet" href="styles/output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedgwick+Ave+Display&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    </head>
+    <body class="bg-bgColor text-primeColor font-[Inter]">
+        <header class="p-5 flex justify-between items-center bg-[#1A1A1A]">
+            <img src="images/Logo (1).svg" alt="" />
+            <nav class="hidden md:block">
+                <ul class="flex justify-between text-subColor gap-7">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Podcasts</a></li>
+                    <li><a href="">Resources</a></li>
+                </ul>
+            </nav>
+            <button class="hidden md:block headerButton">Contact Us</button>
+            <img class="md:hidden" src="images/Icon (1).svg" alt="" />
+        </header>
+        <main class="flex flex-col gap-[1px]">
+            <!-- Hero section  -->
+            <section id="Home">
+                <div
+                    class="max-h-screen min-h-[700px] bg-cover bg-center bg-[url('/images/full-hero-image.png')] flex justify-center py-7 items-end"
+                >
+                    <!-- <img class="object-cover w-screen" src="images/hero-img.png" alt="" /> -->
+                    <h1 class="w-full md:text-6xl text-center text-5xl">
+                        The Rise of Artificial Intelligence in Healthcare
+                    </h1>
+                </div>
+                <!-- <div class="flex justify-center items-center h-screen">
+                    <div>
+                        <img
+                            class="object-cover w-screen hidden"
+                            src="images/full-hero-image.png"
+                            alt=""
+                        />
+                        <img
+                            class="hidden md:block absolute top-20 w-screen"
+                            src="images/hero-img.png"
+                            alt=""
+                        />
+                    </div>
+                    <h1 class="bottom-6 text-6xl text-center">
+                        The Rise of Artificial Intelligence in Healthcare
+                    </h1>
+                </div> -->
+            </section>
+            <!-- News section  -->
+            <section id="News" class="newsBorder flex justify-between items-start">
+                <!-- right-side of news section  -->
+                <div class="newsBorder px-10 max-w-[70%]">
+                    <div class="border-b-[1px] border-b-gray-500 py-3">
+                        <h3 class="text-xl pb-3">Introduction</h3>
+                        <p class="text-[#98989A]">
+                            Artificial Intelligence (AI) has emerged as a transformative force in
+                            the healthcare industry, reshaping patient care, diagnostics, and
+                            research. In this blog post, we explore the profound impact of AI in
+                            healthcare, from revolutionizing diagnostic accuracy to enhancing
+                            patient outcomes.
+                        </p>
+                    </div>
+                    <div class="border-b-[1px] border-b-gray-500 py-3">
+                        <h3 class="text-xl pb-3">Artificial Intelligence (AI)</h3>
+                        <p class="text-[#98989A]">
+                            Artificial Intelligence (AI) has permeated virtually every aspect of our
+                            lives, and healthcare is no exception. The integration of AI in
+                            healthcare is ushering in a new era of medical practice, where machines
+                            complement the capabilities of healthcare professionals, ultimately
+                            improving patient outcomes and the efficiency of the healthcare system.
+                            In this blog post, we will delve into the diverse applications of AI in
+                            healthcare, from diagnostic imaging to personalized treatment plans, and
+                            address the ethical considerations surrounding this revolutionary
+                            technology.
+                        </p>
+                        <h3 class="text-xl py-3">Predictive Analytics and Disease Prevention</h3>
+                        <p class="text-[#98989A]">
+                            One of the most prominent applications of AI in healthcare is in
+                            diagnostic imaging. AI algorithms have demonstrated remarkable
+                            proficiency in interpreting medical images such as X-rays, MRIs, and CT
+                            scans. They can identify anomalies and deviations that might be
+                            overlooked by the human eye. This is particularly valuable in early
+                            disease detection. For instance, AI can aid radiologists in detecting
+                            minute irregularities in mammograms or identifying critical findings in
+                            chest X-rays, potentially indicative of life-threatening conditions.
+                        </p>
+                    </div>
+                </div>
+                <!-- left-side of news section  -->
+                <div class="flex flex-col pb-5">
+                    <div
+                        class="flex justify-center items-center gap-7 py-7 border-b-[1px] border-b-gray-500"
+                    >
+                        <div class="newsButton flex justify-between items-center gap-1">
+                            <i class="bx bxs-heart" style="color: red"></i>
+                            <p>24.5k</p>
+                        </div>
+                        <div class="newsButton flex justify-between items-center gap-1">
+                            <i class="bx bxs-low-vision"></i> 50k
+                        </div>
+                        <div class="newsButton flex justify-between items-center gap-1">
+                            <i class="bx bxs-low-vision"></i> 206
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div class="grid grid-cols-6 gap-7 mx-10 py-10">
+                            <div class="col-span-3">
+                                <h4 class="text-[#98989A]">Publication Date</h4>
+                                <p>October 15, 2023</p>
+                            </div>
+                            <div class="col-span-3">
+                                <h4 class="text-[#98989A]">Category</h4>
+                                <p>Healthcare</p>
+                            </div>
+                            <div class="col-span-3">
+                                <h4 class="text-[#98989A]">Reading Time</h4>
+                                <p>10 Min</p>
+                            </div>
+                            <div class="col-span-3">
+                                <h4 class="text-[#98989A]">Author Name</h4>
+                                <p>Dr. Emily Walker</p>
+                            </div>
+                        </div>
+                        <h3 class="text-[#98989A] mx-10 text-xl">Table of Contents</h3>
+                        <ol class="bg-[#1A1A1A] mx-10 px-10 flex flex-col gap-5 py-5 rounded-xl">
+                            <li>Introduction</li>
+                            <li>AI in Diagnostic Imaging</li>
+                            <li>Predictive Analytics and Disease Prevention</li>
+                            <li>Personalized Treatment Plans</li>
+                            <li>Drug Discovery and Research</li>
+                            <li>AI in Telemedicine</li>
+                            <li>Ethical Considerations</li>
+                            <li>The Future of AI in Healthcare</li>
+                            <li>Conclusion</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
